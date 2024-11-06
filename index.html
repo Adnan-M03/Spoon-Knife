@@ -13,8 +13,25 @@
 
 <!-- Feel free to change this text here -->
 <p>
-  Fork me? Fork you, @octocat!
+  Fork me? Fork you, @octocat!<br>
+  I did fork you.
 </p>
+<canvas aria-label="just a practice text drawn on a canvas">
 
+</canvas>
+
+<script>
+const canvas = document.querySelector('canvas');
+const ctx = canvas.getContext('2d');
+
+const width = canvas.width = window.innerWidth;
+const height = canvas.height = window.innerHeight;
+
+ctx.fillStyle = 'red';
+ctx.lineWidth = 3
+ctx.font = '40px arial';
+ctx.strokeText('The forking is done !', 50, 100);
+
+  </script>
 </body>
 </html>
